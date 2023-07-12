@@ -1,0 +1,6 @@
+.git
+.vscode
+.db*
+obj
+bin
+*.code-workspace
