@@ -8,7 +8,7 @@ namespace ef_core_razor_tut_contoso_university.Pages;
 [IgnoreAntiforgeryToken]
 public class ErrorModel : PageModel
 {
-    public string? RequestId { get; set; }
+    public string RequestId { get; set; }
 
     public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
 
