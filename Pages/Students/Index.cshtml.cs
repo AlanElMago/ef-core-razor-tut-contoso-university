@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using ContosoUniversity.Data;
 using ContosoUniversity.Models;
 
-namespace ef_core_razor_tut_contoso_university.Pages.Students
+namespace ContosoUniversity.Pages.Students
 {
     public class IndexModel : PageModel
     {

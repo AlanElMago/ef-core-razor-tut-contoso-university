@@ -8,7 +8,7 @@
     }
   },
   "profiles": {
-    "ef_core_razor_tut_contoso_university": {
+    "ContosoUniversity": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

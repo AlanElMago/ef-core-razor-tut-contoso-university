@@ -2,9 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>ef_core_razor_tut_contoso_university</RootNamespace>
+    <RootNamespace>ContosoUniversity</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

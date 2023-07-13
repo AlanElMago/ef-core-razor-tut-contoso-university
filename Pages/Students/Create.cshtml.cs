@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using ContosoUniversity.Data;
 using ContosoUniversity.Models;
 
-namespace ef_core_razor_tut_contoso_university.Pages.Students
+namespace ContosoUniversity.Pages.Students
 {
     public class CreateModel : PageModel
     {
@@ -31,8 +31,12 @@ namespace ef_core_razor_tut_contoso_university.Pages.Students
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
         {
-          if (!ModelState.IsValid || _context.Students == null || Student == null)
+            if (!ModelState.IsValid || _context.Students == null || Student == null)
             {
+                var errors = ModelState.Select(x => x.Value.Errors)
+                    .Where(y => y.Count > 0)
+                    .ToList();
+
                 return Page();
             }
 
