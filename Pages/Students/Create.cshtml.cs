@@ -33,10 +33,6 @@ namespace ContosoUniversity.Pages.Students
         {
             if (!ModelState.IsValid || _context.Students == null || Student == null)
             {
-                var errors = ModelState.Select(x => x.Value.Errors)
-                    .Where(y => y.Count > 0)
-                    .ToList();
-
                 return Page();
             }
 
